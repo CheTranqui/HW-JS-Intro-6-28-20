@@ -412,4 +412,3 @@ function cardSecondaryColor(){
     let myColor = document.getElementById('cardBusinessSecondaryColor').value;
     document.getElementById('cardDisplayBusinessSlogan').style.color = myColor;
 }
-
