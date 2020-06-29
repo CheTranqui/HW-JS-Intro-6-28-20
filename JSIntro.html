@@ -236,5 +236,184 @@
         </div>
 
     </section>
+    <section class="container projectContainer" id="cardSection">
+        <h1>
+            Business Card Designer
+        </h1>
+        <fieldset id="cardFieldset">
+            <legend id="cardLegend">
+                Card-O-Matic
+            </legend>
+            <div id="cardContainer">
+                <section class="cardSectionContainer" id="cardOptionsContainer">
+                    <ul class="cardOptionList" id="cardOptionList">
+                        <li class="cardListItem" id="cardListName">
+                            <label class="cardLabel firstPart" id="cardBusinessNameLabel" for="cardBusinessName">
+                                Business Name:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardBusinessName">
+                        </li>
+                        <li class="cardListItem" id="cardListSlogan">
+                            <label class="cardLabel firstPart" id="cardBusinessSloganLabel" for="cardBusinessSlogan">
+                                Business Slogan:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardBusinessSlogan">
+                        </li>
+                        <li class="cardListItem" id="cardListPersonName">
+                            <label class="cardLabel firstPart" id="cardBusinessPersonNameLabel" for="cardPersonName">
+                                Your Name:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardPersonName">
+                        </li>
+                        <li class="cardListItem" id="cardListJobTitle">
+                            <label class="cardLabel firstPart" id="cardJobTitleLabel" for="cardJobTitle">
+                                Your Title:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardJobTitle">
+                        </li>
+                        <li class="cardListItem" id="cardListPhone">
+                            <label class="cardLabel firstPart" id="cardPhoneLabel" for="cardPhone">
+                                Phone Number:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardPhone">
+                        </li>
+                        <li class="cardListItem" id="cardListEmail">
+                            <label class="cardLabel firstPart" id="cardEmailLabel" for="cardEmail">
+                                Your Email:
+                            </label>
+                            <input type="text" class="cardInput secondPart" id="cardEmail">
+                        </li>
+                    </ul>
+                    <form id="cardAlignTextForm">
+                        <button class="btn" type="submit" id="cardAlignLeftButton">
+                            Align-Left
+                        </button>
+                        <button class="btn" type="submit" id="cardAlignCenterButton">
+                            Center
+                        </button>
+                        <button class="btn" type="submit" id="cardAlignRightButton">
+                            Align-Right
+                        </button>
+                    </form>
+                </section>
+                <section>
+                    <form id="cardButtonForm">
+                        <button class="btn cardButton" type="submit" id="cardPreviewButton">
+                            Preview
+                        </button>
+                        <button class="btn cardButton" type="reset" id="cardResetButton">
+                            Reset
+                        </button>
+                        <button class="btn cardButton" type="reset" id="cardReverseButton">
+                            Reverse Order
+                        </button>
+                        <button class="btn cardButton" type="reset" id="cardRandomButton">
+                            Randomize
+                        </button>
+                    </form>
+                </section>
+                <section class="cardSectionContainer" id="cardDisplayContainer">
+                    <div class="cardDisplay" id="cardDisplay">
+                        <p class="displayBusiness default">
+                            <span class="displayText cardDisplayBusinessName" id="cardDisplayBusinessName">
+                                Business
+                            </span>
+                            <span class="displayText cardDisplayBusinessSlogan" id="cardDisplayBusinessSlogan">
+                                Slogan
+                            </span>
+                        </p>
+                        <hr class="displayLine" id="displayLine">
+                        <div>
+                            <p class="displayBusiness default">
+                                <span class="displayText cardDisplayPersonName" id="cardDisplayPersonName">
+                                    Your Name
+                                </span>
+                                <span class="displayText cardDisplayJobTitle italicize" id="cardDisplayJobTitle">
+                                    Job Title
+                                </span>
+                            </p>
+                            <p class="displayBusiness default">
+                                <span class="displayText cardDisplayPhone" id="cardDisplayPhone">
+                                    Phone Number
+                                </span>
+                                <span class="displayText cardDisplayEmail" id="cardDisplayEmail">
+                                    Email Address
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                <!-- <div class="cardDisplay cardDisplayHidden" id="cardDisplayHidden">
+                        <p class="displayBusiness default">
+                            <span class="displayText cardDisplayBusinessName" id="cardDisplayBusinessName" value="business">
+                                Business
+                            </span>
+                            <span class="displayText cardDisplayBusinessSlogan" id="cardDisplayBusinessSlogan" value="business">
+                                Slogan
+                            </span>
+                        </p>
+                        <hr>
+                        <p class="displayBusiness default">
+                            <span class="displayText cardDisplayPersonName" id="cardDisplayPersonName" value="person">
+                                Your Name
+                            </span>
+                            <span class="displayText cardDisplayJobTitle" id="cardDisplayJobTitle" value="person">
+                                Job Title
+                            </span>
+                        </p>
+                        <p class="displayBusiness default">
+                            <span class="displayText cardDisplayPhone" id="cardDisplayPhone" value="contact">
+                                Phone Number
+                            </span>
+                            <span class="displayText cardDisplayEmail" id="cardDisplayEmail" value="contact">
+                                Email Address
+                            </span>
+                        </p>
+                    </div> -->
+                    <div id="cardColorPicker">
+                        <section class="displayColorsSection" id="displayColorsPerson">
+                            <p class="displayColors">
+                                <label class="cardLabel firstPart" for="cardBackgroundColor">
+                                    Background:
+                                </label>
+                                <input class="colorInput" type="color" id="cardBackgroundColor" value="#ffffff">
+                            </p>
+                            <p class="displayColors">
+                                <label class="cardLabel firstPart" for="cardTextColor">
+                                    Text Color:
+                                </label>
+                                <input class="colorInput" type="color" id="cardTextColor" value="#000000">
+                            </p>
+                            <p class="displayColors">
+                                <label class="cardLabel firstPart" for="cardAccentColor">
+                                    Accent Color:
+                                </label>
+                                <input class="colorInput" type="color" id="cardAccentColor" value="#ffd700">
+                            </p>
+                        </section>
+                        <section class="displayColorsSection" id="displayColorsBusiness">
+                            <p class="displayColors">
+                                <label class="cardLabel firstPart" for="cardBusinessPrimaryColor">
+                                    Business Color 1:
+                                </label>
+                                <input class="colorInput" type="color" id="cardBusinessPrimaryColor" value="#0000ff">
+                            </p>
+                            <p class="displayColors">
+                                <label class="cardLabel firstPart" for="cardBusinessSecondaryColor">
+                                    Business Color 2:
+                                </label>
+                                <input class="colorInput" type="color" id="cardBusinessSecondaryColor" value="#ff0000">
+                            </p>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </fieldset>
+    </section>
 </body>
 </html>
+
+document.getElementById('cardBackgroundColor').addEventListener('click', cardBackgroundColor);
+document.getElementById('cardTextColor').addEventListener('click', cardTextColor);
+document.getElementById('cardAccentColor').addEventListener('click', cardTextColor);
+document.getElementById('cardBusinessPrimaryColor').addEventListener('click', cardPrimaryColor);
+document.getElementById('cardBusinessSecondaryColor').addEventListener('click', cardSecondaryColor);

@@ -46,7 +46,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: darkslategray;
+    background-color: rgb(55, 56, 56);
+    color: rgb(255, 255, 255);
+    font-style: oblique;
     z-index: 2;
     border: 10px solid rgb(2, 43, 77);
 }
@@ -237,7 +239,7 @@ section{
 
 fieldset{
     border: 5px solid lightseagreen;
-    background-color: rgb(40, 68, 68);
+    background-color: rgb(55, 56, 56);
     border-radius: 20px;
     color: rgb(219, 245, 248);
 }
@@ -284,3 +286,148 @@ legend{
     top: 5em;
     left: 6em;
 }
+
+#cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#cardDisplayContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+
+#cardColorPicker{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.cardOptionList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardListItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secondPart{
+    margin-left: 1em;
+}
+.cardLabel, .cardInput{
+    font-size: 1.2em;
+}
+
+.cardListItem{
+    list-style-type: none;
+    margin: 1em 0.25em 1em 0.25em;
+}
+
+.cardInput{
+    background-color: rgb(59, 75, 75);
+    color: rgb(219, 245, 248);
+}
+
+.cardDisplay{
+    content: "";
+    margin: 1em 1em 1em 1em;
+    width: 25em;
+    height: 15em;
+    border: 5px solid black;
+    align-self: center;
+    margin-bottom: 2em;
+    background-color: floralwhite;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cardDisplayHidden{
+    display: none;
+    z-index: 1;
+}
+
+.cardDisplay p{
+    margin: 0.5em 1em 0.5em 1em;
+}
+
+.colorInput{
+    background-color: rgb(55, 56, 56);
+    border: none;
+}
+
+#cardButtonForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1em 1em 4em 1em;
+}
+
+.cardButton{
+    margin: 1em 0 1em 0;
+}
+
+#cardAlignTextForm{
+    margin-left: 5em;
+}
+
+.cardDisplayBusinessName{
+    font-size: 2em;
+}
+
+.cardDisplayBusinessSlogan,
+.cardDisplayJobTitle,
+.cardDisplayEmail,
+.cardDisplayPhone{
+    font-size: 1.2em;
+}
+
+.cardDisplayEmail,
+.cardDisplayJobTitle{
+    margin-bottom: 0.5em;
+}
+
+.cardDisplayPersonName{
+    font-size: 1.5em;
+}
+
+.default{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.displayBusiness{
+    margin: 0em;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.italicize{
+    font-style: italic;
+}
+
+.displayLine{
+    margin: 0.25em;
+}
+
+
