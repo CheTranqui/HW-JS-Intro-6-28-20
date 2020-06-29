@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function rollDie(){
+    event.preventDefault();
     let myRoll = getRandomNumber(20).toString();
     if (myRoll == undefined ||
         myRoll == null ||
